@@ -1,0 +1,98 @@
+.map-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* card */
+.map-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* header */
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.map-title {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.map-sub {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+}
+
+/* input row */
+.map-input-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.map-input {
+  flex: 1;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+}
+
+.map-input:focus {
+  border-color: var(--accent);
+}
+
+/* button */
+.map-btn {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.map-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+/* map box */
+.map-container {
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.leaflet-interactive {
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+.leaflet-tile {
+  transition: opacity 0.3s ease;
+}

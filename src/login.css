@@ -1,0 +1,127 @@
+.login-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 48px 52px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.login-sub {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.field-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field-input::placeholder {
+  color: #444444;
+}
+
+.field-input:focus {
+  border-color: var(--accent);
+}
+
+.login-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.login-footer {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.login-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.login-link:hover {
+  color: var(--text);
+}

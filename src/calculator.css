@@ -1,0 +1,89 @@
+.calc-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 40px 16px;
+}
+
+.calc-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: center;
+}
+
+.calc-title {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.calc-display {
+  background-color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 18px;
+  color: var(--text);
+  text-align: right;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calc-grid button {
+  padding: 12px;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  color: var(--text);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calc-grid button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.calc-grid button:active {
+  transform: scale(0.95);
+}
+
+/* special buttons */
+.equals {
+  grid-row: span 3;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+.equals:hover {
+  background-color: var(--accent-hover);
+}
+
+.zero {
+  grid-column: span 2;
+}

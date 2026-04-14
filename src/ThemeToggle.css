@@ -1,0 +1,124 @@
+.tt-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 40px 16px;
+  transition: background-color 0.3s;
+}
+
+.tt-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 48px 52px;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tt-title {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.tt-sub {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+.tt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.tt-swatch {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--s-bg);
+  border: 1px solid var(--s-border);
+  border-top: 3px solid var(--s-accent);
+  border-radius: 8px;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+.tt-swatch:hover {
+  transform: translateY(-2px);
+}
+
+.tt-swatch.active {
+  border-color: var(--s-accent);
+  border-width: 2px;
+  border-top-width: 3px;
+}
+
+.tt-swatch-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--s-accent);
+}
+
+.tt-swatch-name {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--s-text);
+}
+
+.tt-swatch-active {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 10px;
+  color: var(--s-accent);
+  font-weight: 900;
+}
+
+.tt-preview {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tt-preview-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.tt-preview-name {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+}

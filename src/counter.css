@@ -1,0 +1,113 @@
+.counter-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.counter-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.counter-title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+/* display */
+.counter-display {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.counter-display p {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.counter-display h1 {
+  font-size: 40px;
+  color: var(--accent);
+}
+
+/* quick buttons */
+.counter-quick {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.counter-quick button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.counter-quick button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* input */
+.counter-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+
+/* action buttons */
+.counter-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.counter-actions button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.counter-actions button:hover {
+  background: var(--accent-hover);
+}
+
+/* reset */
+.counter-reset {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+
+.counter-reset:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

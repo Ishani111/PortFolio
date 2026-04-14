@@ -1,0 +1,223 @@
+.sm-page {
+  background-color: var(--bg);
+  min-height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 40px 24px;
+  transition: background-color 0.3s;
+}
+
+.sm-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sm-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sm-title {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.sm-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm-stat {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.sm-stat-sep {
+  color: var(--border);
+}
+
+.sm-form {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 16px;
+  align-items: end;
+}
+
+.sm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sm-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.sm-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.sm-input::placeholder { color: var(--text-dim); }
+.sm-input:focus { border-color: var(--accent); }
+
+.sm-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.sm-btn:hover { background-color: var(--accent-hover); }
+.sm-btn:active { transform: scale(0.97); }
+
+.sm-empty {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  padding: 40px 0;
+}
+
+.sm-table-wrap {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.sm-table thead tr {
+  background-color: var(--bg);
+  border-bottom: 2px solid var(--accent);
+}
+
+.sm-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.sm-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.15s;
+}
+
+.sm-table tbody tr:last-child { border-bottom: none; }
+.sm-table tbody tr:hover { background-color: var(--bg); }
+
+.sm-table td {
+  padding: 14px 16px;
+  color: var(--text);
+}
+
+.sm-td-num {
+  color: var(--text-dim) !important;
+  font-size: 12px;
+}
+
+.sm-grade {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.sm-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.sm-edit-btn, .sm-delete-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.sm-edit-btn {
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.sm-edit-btn:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.sm-delete-btn {
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
+.sm-delete-btn:hover {
+  background-color: rgba(204, 0, 0, 0.12);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .sm-form { grid-template-columns: 1fr; }
+}
