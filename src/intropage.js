@@ -40,13 +40,13 @@ function Intro() {
           </button>
           <button 
             className="outline" 
-            onClick={() => window.open("https://linkedin.com/in/yourprofile", "_blank")}
+            onClick={() => window.open("https://linkedin.com/in/ishani111", "_blank")}
           >
             LinkedIn
           </button>
           <button 
             className="outline"
-            onClick={() => window.open("https://github.com/yourusername", "_blank")}
+            onClick={() => window.open("https://github.com/Ishani111", "_blank")}
           >
             GitHub
           </button>
