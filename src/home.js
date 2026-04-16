@@ -34,7 +34,7 @@ function Home() {
     <div className="page">
       <header className="site-header">
         <h1>PORTFOLIO</h1>
-        <span className="header-sub">React Projects meow:3</span>
+        <span className="header-sub">React Projects</span>
       </header>
 
       <p className="section-label">My Projects</p>
