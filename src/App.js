@@ -14,6 +14,8 @@ import MapFree from "./map";
 import "./App.css";
 import Calculator from "./calculator";
 import Intro from "./intropage";
+import Footer from "./footer";
+import SnakeGame from "./Snakegame";
 
 const navLinks = [
   { path: "/home", label: "Home" },
@@ -28,6 +30,7 @@ const navLinks = [
   { path: "/Weather", label: "Weather" },
   { path: "/Map", label: "Map" },
   { path: "/Calculator", label: "Calculator" },
+  {path: "/SnakeGame", label:"SnakeGame"},
   {path: "/", label:"Intropage"},
 ];
 
@@ -35,7 +38,7 @@ function Layout() {
   const { theme } = useTheme();
 
   return (
-    <div style={{ background: theme.bg, minHeight: "100vh", transition: "background 0.3s" }}>
+    <div className="page-wrapper" style={{ background: theme.bg, minHeight: "100vh", transition: "background 0.3s" }}>
       <nav className="navbar" style={{ background: theme.navBg, borderBottomColor: theme.accent }}>
         <div className="nav-brand">
           <Link className="nav-logo" to="/" style={{ background: theme.accent, color: theme.headerText }}>
@@ -59,6 +62,7 @@ function Layout() {
         </div>
       </nav>
 
+      <main style={{ flex: 1 }}>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Signin />} />
@@ -72,8 +76,11 @@ function Layout() {
         <Route path="/Weather" element={<Weather />} />
         <Route path="/Map" element={<MapFree />} />
         <Route path="/Calculator" element={<Calculator />} />
+        <Route path="/SnakeGame" element={<SnakeGame />} />
         <Route path="/" element={<Intro/>} />
       </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

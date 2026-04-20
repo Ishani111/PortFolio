@@ -1,4 +1,3 @@
-import { icon } from "leaflet";
 import { createContext, useContext, useState } from "react";
 
 export const themes = {
@@ -18,21 +17,37 @@ export const themes = {
     icon: "rgba(204, 0, 0, 0.35)",
     iconBorder: "#cc0000",
   },
+  pink: {
+    name: "Pink",
+    bg: "#f7dbe4",
+    card: "#fff8f9",
+    border: "#f0d6db",
+    accent: "#c0366a",
+    accentHover: "#9e2255",
+    text: "#1e0f13",
+    textMuted: "#6b3a48",
+    textDim: "#a87585",
+    navBg: "#1e0f13",
+    headerBg: "#1e0f13",
+    headerText: "#fde8ed",
+    icon: "rgba(192, 54, 106, 0.12)",
+    iconBorder: "rgba(192, 54, 106, 0.35)",
+  },
   light: {
     name: "Light",
-    bg: "#f5f5f0",
-    card: "#ffffff",
-    border: "#dddddd",
+    bg: "#f5f0eb",
+    card: "#fffefb",
+    border: "#e0d8d0",
     accent: "#cc0000",
     accentHover: "#aa0000",
-    text: "#111111",
-    textMuted: "#555555",
-    textDim: "#888888",
-    navBg: "#ffffff",
-    headerBg: "#111111",
-    headerText: "antiquewhite",
-    icon: "rgba(204, 0, 0, 0.35)",
-    iconBorder: "#cc0000",
+    text: "#1a1612",
+    textMuted: "#7e756e",
+    textDim: "#49423e",
+    navBg: "#1a1612",
+    headerBg: "#1a1612",
+    headerText: "#faebd7",
+    icon: "rgba(204, 0, 0, 0.15)",
+    iconBorder: "rgba(204, 0, 0, 0.4)",
   },
   peach: {
     name: "Peach",
@@ -114,7 +129,7 @@ export const themes = {
     icon: "#4b2b57",
     iconBorder: "#9b59b6",
   },
-  pink: {
+  hotpink: {
     name: "Pink",
     bg: "#1f0818",
     card: "#281020",
@@ -135,7 +150,7 @@ export const themes = {
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [themeName, setThemeName] = useState("dark");
+  const [themeName, setThemeName] = useState("light");
   const theme = themes[themeName];
 
   return (

@@ -6,7 +6,7 @@
 
 .page {
   background-color: var(--bg);
-  min-height: 100vh;
+  min-height: calc(100vh); ;
   padding-bottom: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -29,7 +29,7 @@
 }
 
 .header-sub {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: var(--text-dim);
   text-transform: uppercase;
@@ -37,7 +37,7 @@
 
 .section-label {
   padding: 24px 40px 8px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--text-dim);
@@ -73,7 +73,7 @@
   background-color: var(--bg);
   border-color: var(--accent);
   transform: translateY(-3px);
-  color: #ccc;;
+  color: var(--text);
 }
 
 
@@ -90,11 +90,34 @@
 }
 
 .card-title {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--text);
   text-align: center;
   line-height: 1.4;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--header-text, #111111);
+  background-color: transparent;
+  border: 1.5px solid currentColor;
+  border-radius: 6px;
+  padding: 7px 14px;
+  opacity: 0.7;
+  transition: opacity 0.15s, background-color 0.15s;
+}
+
+.social-link:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.08);
 }
