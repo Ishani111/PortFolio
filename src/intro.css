@@ -194,21 +194,14 @@
 }
 
 .avatar-ring {
-  width: 180px;
-  height: 180px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   border: 3px solid var(--accent, #cc0000);
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--card, #1e1e1e);
-}
-
-.avatar-initials {
-  font-size: 52px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  color: var(--accent, #cc0000);
 }
 
 .avatar-tag {

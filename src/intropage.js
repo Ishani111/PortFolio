@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./intro.css";
+import myImage from './MyImage (2).jpeg';
 
 function Intro() {
   const navigate = useNavigate();
@@ -52,11 +53,8 @@ function Intro() {
 
           <div className="hero-avatar">
             <div className="avatar-ring">
-              <div className="avatar-initials">
-                {/* Change to your initials */}
-                YN
+                <img className="avatar-ring" src={myImage} alt="Description of image" />
               </div>
-            </div>
             <div className="avatar-tag">Open to Work</div>
           </div>
 
