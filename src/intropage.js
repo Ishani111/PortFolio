@@ -53,7 +53,7 @@ function Intro() {
 
           <div className="hero-avatar">
             <div className="avatar-ring">
-                <img className="avatar-ring" src={myImage} alt="Description of image" />
+                <img className="avatar-ring" src={myImage} alt="Description" />
               </div>
             <div className="avatar-tag">Open to Work</div>
           </div>

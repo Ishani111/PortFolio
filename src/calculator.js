@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { evaluate } from "mathjs";
 import "./calculator.css";
 
 function Calculator() {
@@ -14,7 +15,8 @@ function Calculator() {
 
   const calculate = () => {
     try {
-      setInput(eval(input).toString());
+      const result = evaluate(input);
+      setInput(result.toString());
     } catch {
       setInput("Error");
     }
