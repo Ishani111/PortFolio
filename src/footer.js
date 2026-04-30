@@ -1,8 +1,6 @@
 import { 
   FaGithub, 
   FaLinkedin, 
-  FaEnvelope, 
-  FaPhone 
 } from "react-icons/fa";import "./footer.css";
 
 export default function Footer() {
@@ -33,24 +31,6 @@ export default function Footer() {
           >
             <FaLinkedin size={16} />
             <span>LinkedIn</span>
-          </a>
-
-          <a
-            className="footer-link"
-            href="mailto:you@email.com"
-            title="Email"
-          >
-            <FaEnvelope size={16} />
-            <span>ishani7bbsc@gmail.com</span>
-          </a>
-
-          <a
-            className="footer-link"
-            href="tel:+911234567890"
-            title="Phone"
-          >
-            <FaPhone size={16} />
-            <span>+91 9807105493</span>
           </a>
         </div>
 

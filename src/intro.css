@@ -425,7 +425,8 @@
 /* ── CONTACT ─────────────────────────────────────────────────────────────── */
 
 .contact-grid {
-  display: grid;
+  display: center;
+
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
 }

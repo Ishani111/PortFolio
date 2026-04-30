@@ -94,7 +94,6 @@ function Intro() {
               This portfolio is a collection of my experiments and learning —
               each project taught me something new about frontend development.
             </p>
-            <a className="btn-outline" href="mailto:your.ishani7bbsc@gmail.com">Email Me</a>
           </div>
         </div>
       </section>
@@ -165,8 +164,6 @@ function Intro() {
 
         <div className="contact-grid">
           {[
-            { label: "Email",    value: "Ishani7bbsc@gmail.com", href: "mailto:your.Ishani7bbsc@gmail.com" },
-            { label: "Phone",    value: "+91 98071 05493",        href: "tel:+919807105493"             },
             { label: "LinkedIn", value: "linkedin.com/in/ishani-dev",    href: "https://linkedin.com/in/ishani-dev" },
             { label: "GitHub",   value: "github.com/ishani111",   href: "https://github.com/ishani111"  },
           ].map(({ label, value, href }) => (
