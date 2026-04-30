@@ -26,7 +26,7 @@ export default function Footer() {
 
           <a
             className="footer-link"
-            href="https://linkedin.com/in/ishani111"
+            href="https://linkedin.com/in/ishani-dev"
             target="_blank"
             rel="noreferrer"
             title="LinkedIn"

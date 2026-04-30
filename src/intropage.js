@@ -44,7 +44,7 @@ function Intro() {
                 <FaGithub size={20} />
                 <span>GitHub</span>
               </a>
-              <a className="hero-social" href="https://linkedin.com/in/ishani111" target="_blank" rel="noreferrer">
+              <a className="hero-social" href="https://linkedin.com/in/ishani-dev" target="_blank" rel="noreferrer">
                 <FaLinkedin size={20} />
                 <span>LinkedIn</span>
               </a>
@@ -167,7 +167,7 @@ function Intro() {
           {[
             { label: "Email",    value: "Ishani7bbsc@gmail.com", href: "mailto:your.Ishani7bbsc@gmail.com" },
             { label: "Phone",    value: "+91 98071 05493",        href: "tel:+919807105493"             },
-            { label: "LinkedIn", value: "linkedin.com/in/ishani111",    href: "https://linkedin.com/in/ishani111" },
+            { label: "LinkedIn", value: "linkedin.com/in/ishani-dev",    href: "https://linkedin.com/in/ishani-dev" },
             { label: "GitHub",   value: "github.com/ishani111",   href: "https://github.com/ishani111"  },
           ].map(({ label, value, href }) => (
             <a key={label} className="contact-card" href={href} target="_blank" rel="noreferrer">
